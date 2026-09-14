@@ -2,77 +2,69 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tulungagung Black Hat - Ethical Hacking</title>
+<title>TBH v2.0 Pro - Tulungagung Black Hat</title>
 <style>
-body{margin:0;font-family:monospace;background:#0d1117;color:#c9d1d9}
-header{background:linear-gradient(90deg,#000,#ff0000);padding:40px;text-align:center}
-header h1{color:#fff;font-size:2.5em;margin:0}
-header p{color:#ffb3b3}
-.container{max-width:900px;margin:auto;padding:20px}
-.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px;margin:15px 0}
-.card h3{color:#ff5555}
-a{color:#58a6ff;text-decoration:none}
-a:hover{color:#ff5555}
-.badge{display:inline-block;background:#21262d;padding:5px 10px;border-radius:20px;margin:3px;font-size:0.9em}
-pre{background:#0d1117;padding:10px;border-radius:5px;overflow:auto}
-footer{text-align:center;padding:20px;color:#8b949e}
+:root{--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#c9d1d9;--accent:#ff3b3b}
+body{margin:0;font-family:'Segoe UI',monospace;background:var(--bg);color:var(--text)}
+header{background:linear-gradient(135deg,#000 0%,#ff0000 50%,#000 100%);padding:50px;text-align:center;border-bottom:3px solid var(--accent)}
+header h1{color:#fff;font-size:2.8em;margin:0;text-shadow:0 0 10px #ff0000}
+.badge{display:inline-block;background:#21262d;border:1px solid var(--accent);padding:6px 12px;border-radius:20px;margin:3px;font-size:0.85em;color:#ffb3b3}
+.container{max-width:950px;margin:auto;padding:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px;margin:18px 0;box-shadow:0 4px 10px rgba(255,0,0,0.1)}
+.card h3{color:var(--accent);border-left:4px solid var(--accent);padding-left:10px}
+a{color:#58a6ff;text-decoration:none} a:hover{color:var(--accent)}
+pre{background:#0d1117;padding:12px;border-radius:8px;overflow:auto;border:1px solid var(--border)}
+footer{text-align:center;padding:25px;color:#8b949e;border-top:1px solid var(--border)}
+.pro{color:var(--accent);font-weight:bold}
 </style>
 </head>
 <body>
 <header>
 <h1>꧁ TULUNGAGUNG BLACK HAT ꧂</h1>
-<p>Ethical Hacking & Cyber Security | Tulungagung, Jawa Timur</p>
+<p><span class="pro">v2.0 Pro</span> | Ethical Hacking & Cyber Security | Tulungagung, Jawa Timur</p>
 <p>Always Smile :) | uchil404</p>
 <p>
-<a href="https://github.com/TulungagungBlackHat" style="color:#fff">GitHub</a> |
-<span style="color:#fff">Tulisan & Tools Edukasi</span>
+<a href="https://github.com/TulungagungBlackHat" style="color:#fff">GitHub</a> • 
+<span style="color:#fff">13 Repos • 5 Tools v2.0 Pro • Portfolio</span>
 </p>
+<p><span class="badge">Python v2.0 Pro</span><span class="badge">Bug Bounty</span><span class="badge">JSON/HTML Report</span><span class="badge">Termux Ready</span></p>
 </header>
 <div class="container">
 <div class="card">
-<h3>👨‍💻 Tentang</h3>
-<p>Komunitas edukasi <b>Ethical Hacking, Bug Bounty & Cyber Security</b> dari Tulungagung. Fokus ke <b>tulisan & tools defensive</b> - tanpa video, tetap berbagi ilmu.</p>
-<p><span class="badge">Python</span><span class="badge">Bug Bounty</span><span class="badge">Termux</span><span class="badge">Defensive</span></p>
-</div>
-<div class="card">
-<h3>🧰 Toolkit - 1 Klik Install</h3>
+<h3>🧰 TBH Toolkit v2.0 Pro - 1 Klik</h3>
 <pre>git clone https://github.com/TulungagungBlackHat/TBH-Toolkit
-cd TBH-Toolkit && bash install.sh</pre>
-<p>Semua tools TBH langsung ke-install.</p>
+cd TBH-Toolkit && bash install.sh
+# Semua 5 tools v2.0 Pro langsung ke-install + JSON/HTML support</pre>
 </div>
 <div class="card">
-<h3>🛠️ Tools TBH</h3>
+<h3>🛠️ Tools v2.0 Pro (JSON/CSV/HTML)</h3>
 <ul>
-<li><a href="https://github.com/TulungagungBlackHat/TBH-Recon">TBH-Recon</a> - Web Recon (Header, Port, Subdomain)</li>
-<li><a href="https://github.com/TulungagungBlackHat/TBH-PhishDetector">TBH-PhishDetector</a> - Phishing Detector 9 Heuristik</li>
-<li><a href="https://github.com/TulungagungBlackHat/TBH-PortScanner">TBH-PortScanner</a> - Fast Scanner + CVE Hints</li>
-<li><a href="https://github.com/TulungagungBlackHat/TBH-PassStrength">TBH-PassStrength</a> - Password Strength Checker</li>
-<li><a href="https://github.com/TulungagungBlackHat/awesome-tulungagung">awesome-tulungagung</a> - Kumpulan Resource Indonesia</li>
+<li><a href="https://github.com/TulungagungBlackHat/TBH-Recon">TBH-Recon v2.0 Pro</a> - <span class="pro">NEW JSON+HTML</span> --ssl --json report.json</li>
+<li><a href="https://github.com/TulungagungBlackHat/TBH-PhishDetector">TBH-PhishDetector v2.0 Pro</a> - <span class="pro">NEW CSV+JSON</span> bulk --csv out.csv</li>
+<li><a href="https://github.com/TulungagungBlackHat/TBH-PortScanner">TBH-PortScanner v2.0 Pro</a> - <span class="pro">NEW JSON</span> --json out.json</li>
+<li><a href="https://github.com/TulungagungBlackHat/TBH-PassStrength">TBH-PassStrength v2.0 Pro</a> - <span class="pro">NEW Generator+JSON</span></li>
+<li><a href="https://github.com/TulungagungBlackHat/TBH-Utils">TBH-Utils v2.0 Pro</a> - <span class="pro">NEW JSON</span> + QR/Base64/Hash</li>
 </ul>
 </div>
 <div class="card">
-<h3>📝 Blog Tulisan (Tanpa Video)</h3>
-<p><b>Kenapa tulisan?</b> Lebih mudah, gak perlu PD depan kamera, dan lebih dicari Google.</p>
-<ul>
-<li><b>Cara Memulai Bug Bounty untuk Pemula</b> - coming soon di <a href="https://github.com/TulungagungBlackHat/awesome-tulungagung">awesome-tulungagung</a></li>
-<li><b>5 Kesalahan Password yang Sering Dilakukan</b> - pakai <a href="https://github.com/TulungagungBlackHat/TBH-PassStrength">TBH-PassStrength</a> untuk cek</li>
-<li><b>Cara Deteksi Phising Tanpa Klik Link</b> - pakai <a href="https://github.com/TulungagungBlackHat/TBH-PhishDetector">TBH-PhishDetector</a></li>
-</ul>
-<p>Tulisan akan di-share sebagai <b>GitHub README</b> - cukup tulis, langsung dapat star.</p>
-</div>
-<div class="card">
-<h3>⭐ Star History</h3>
+<h3>⭐ Star History v2.0</h3>
 <p><a href="https://star-history.com/#TulungagungBlackHat/TBH-Recon&TulungagungBlackHat/TBH-PhishDetector&TulungagungBlackHat/TBH-PortScanner&TulungagungBlackHat/TBH-Toolkit&Date"><img src="https://api.star-history.com/svg?repos=TulungagungBlackHat/TBH-Recon,TulungagungBlackHat/TBH-PhishDetector,TulungagungBlackHat/TBH-PortScanner,TulungagungBlackHat/TBH-Toolkit&type=Date" style="max-width:100%"></a></p>
 </div>
-
 <div class="card">
-<h3>📊 Stats</h3>
+<h3>📝 Blog Tulisan</h3>
+<ul>
+<li><a href="https://github.com/TulungagungBlackHat/awesome-tulungagung/blob/main/guides/bug-bounty-pemula.md">Cara Memulai Bug Bounty Pemula</a></li>
+<li><a href="https://github.com/TulungagungBlackHat/awesome-tulungagung/blob/main/guides/password-aman.md">5 Kesalahan Password</a></li>
+</ul>
+</div>
+<div class="card">
+<h3>📊 Stats v2.0 Pro</h3>
 <p><img src="https://github-readme-stats.vercel.app/api?username=TulungagungBlackHat&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=FF0000&icon_color=FF0000" style="max-width:100%"></p>
+<p><img src="https://komarev.com/ghpvc/?username=TulungagungBlackHat&label=Profile%20Views&color=FF0000&style=flat" /></p>
 </div>
 </div>
 <footer>
-<p>&copy; 2026 Tulungagung Black Hat - MIT - Educational Only</p>
+<p>&copy; 2026 Tulungagung Black Hat v2.0 Pro - MIT - Educational Only | Always Smile :)</p>
 </footer>
-</div>
 </body>
 </html>
