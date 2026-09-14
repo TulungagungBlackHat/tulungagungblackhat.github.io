@@ -17,9 +17,19 @@ pre{background:#0d1117;padding:12px;border-radius:8px;overflow:auto;border:1px s
 footer{text-align:center;padding:25px;color:#8b949e;border-top:1px solid var(--border)}
 .pro{color:var(--accent);font-weight:bold}
 </style>
+<script>
+function toggleTheme(){document.body.classList.toggle('light');localStorage.setItem('theme',document.body.classList.contains('light')?'light':'dark')}
+window.onload=()=>{if(localStorage.getItem('theme')=='light')document.body.classList.add('light')}
+</script>
+<style>
+body.light{background:#ffffff;color:#24292e}
+body.light .card{background:#f6f8fa;border-color:#d0d7de}
+body.light header{background:linear-gradient(135deg,#ff0000 0%,#000 100%)}
+</style>
 </head>
 <body>
 <header>
+<button onclick="toggleTheme()" style="position:absolute;top:15px;right:15px;background:#21262d;color:#fff;border:1px solid #ff0000;padding:8px 12px;border-radius:20px;cursor:pointer">🌙/☀️ Toggle</button>
 <h1>꧁ TULUNGAGUNG BLACK HAT ꧂</h1>
 <p><span class="pro">v2.0 Pro</span> | Ethical Hacking & Cyber Security | Tulungagung, Jawa Timur</p>
 <p>Always Smile :) | uchil404</p>
